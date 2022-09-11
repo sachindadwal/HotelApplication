@@ -18,9 +18,9 @@ public class Customer {
     @GeneratedValue(strategy = GenerationType.SEQUENCE)
     @Column(name = "id")
     private Long id;
-    @Column(name = "customerName", length = 20)
+    @Column(name = "customer_name", length = 20)
     private String customerName;
-    @Column(name = "customerEmail", unique = true, length = 50)
+    @Column(name = "customer_email", unique = true, length = 50)
     private String customerEmail;
     @OneToOne(cascade = CascadeType.ALL)
     @JoinColumn(name = "address_id")
